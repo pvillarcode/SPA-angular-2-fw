@@ -9,12 +9,11 @@ import { FrameworkConfigService, FrameworkConfigSettings} from '../fw/services/f
 
 export class AppComponent {
   constructor (private frameworkConfigService: FrameworkConfigService) {
-  
     let config : FrameworkConfigSettings = {
         socialIcons: [
-            {imageFile: 'assets/social-fb-bw.png', alt: 'Facebook', link:'http://www.facebook.com'}
+            {imageFile: 'assets/facebook.png', alt: 'Facebook', link:'http://www.facebook.com'}
         ],
-        showLenguageSelector:true
+        showLenguageSelector:false
     };
     frameworkConfigService.configure(config);
   }
